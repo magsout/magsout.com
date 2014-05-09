@@ -1,5 +1,5 @@
 magsout.github.io
 =================
 
-[Profile](magsout.github.io)
+[Profile](http://magsout.github.io)
 
