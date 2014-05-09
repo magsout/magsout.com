@@ -33,6 +33,7 @@
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	text-shadow: none;
 }
 
 
@@ -53,7 +54,7 @@
 }
 .icon-iconmonstr-pinterest-icon:before {
 	content: "\e601";
-	color: colorPinterest;
+	color: $colorPinterest;
 }
 .icon-iconmonstr-linkedin-icon:before {
 	content: "\e602";

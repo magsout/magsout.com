@@ -89,6 +89,7 @@ a:hover {
 	text-transform: none;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	text-shadow: none;
 }
 
 .icon-iconmonstr-twitter-icon:before {
@@ -98,7 +99,7 @@ a:hover {
 
 .icon-iconmonstr-pinterest-icon:before {
 	content: "\e601";
-	color: colorPinterest;
+	color: #cb2027;
 }
 
 .icon-iconmonstr-linkedin-icon:before {
