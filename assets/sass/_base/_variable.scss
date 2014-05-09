@@ -1,0 +1,73 @@
+/**
+* Variable classes
+*
+* @author splitfire - http://splitfire.fr
+* @version 1.0
+*
+*/
+
+
+
+//Taille
+
+$guss-rem-baseline 	: 16px ;  // base font-size browser
+$minWidth 			: 320px ; // taille minimum du site
+$maxWidth 			: 1920px; // Taille maximum du site
+$containerWidh		: 1180px; // taille maximum des elements
+
+
+//Couleurs / typo
+
+$defaultFont	: "Open Sans",Helvetica,Arial,sans-serif; //Police utilisée pour l'ensemble de l'application
+$colorFacebook 	: #3B5996	; //Couleur facebook
+$colorTwitter	: #00ACEE	; // Couleur twitter
+$colorGoogle	: #C3391C	; // Couleur Google plus
+$colorPinterest : #CB2027   ; // Couleur pinterest
+$colorLinkedin 	: #1981BA	; // Couleur linkedin
+$colorGithub 	: #333333	; // Couleur Github
+
+
+
+
+/* Responsive 
+-------------------------*/
+
+// Configuration JS Module
+// Tableau de configuration envoyé dans body:before
+// Permet d'établir en fonction du device les differents modules qui seront chargés en javascript.
+// Le traitement sera fait par JavaScript
+
+$configPhoneJS		:	'{"device": "phone"}' !default; 
+$configPhabletJS	:	'{"device": "phablet"}' !default; 
+$configTabletJS		:	'{"device": "tablet"}' 	!default; 
+$configDesktopJS 	:	'{"device": "desktop"}'	!default; 
+$configWideJS 		:	'{"device": "wide"}'	!default; 
+
+
+/* Tableau des breakpoints
+----------------------------*/
+
+// Name your breakpoints in a way that creates a ubiquitous language
+// across team members. It will improve communication between
+// stakeholders, designers, developers, and testers.
+
+$mq-breakpoints: (
+    phone		:  	320px,
+    phablet		:   568px,
+    tablet		:  	768px,
+    desktop		: 	1024px,
+    wide		:	1180px
+) !default;
+
+
+//Media Querie Config
+$mq-configs: (
+    phone		:  	$configPhoneJS,
+    phablet		:  	$configPhabletJS,
+    tablet		:  	$configTabletJS,
+    desktop		: 	$configDesktopJS,
+    wide		:	$configWideJS
+) !default;
+
+
+//$mq-show-breakpoints: (phone, phablet, tablet, desktop, wide);

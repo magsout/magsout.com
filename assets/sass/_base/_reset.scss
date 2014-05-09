@@ -1,0 +1,44 @@
+/**
+* Reset classes
+*
+* @author splitfire - http://splitfire.fr
+* @version 1.0
+*
+*/
+
+/* Main
+--------*/
+body 
+{
+	margin: 0;
+	padding: 0;
+}
+html,
+body
+{
+	height: 100%;
+}
+html
+{
+	font-size: 100%;
+} 
+*,
+*:before,
+*:after
+{box-sizing: border-box}
+
+
+
+a img 
+{
+	border: none;
+}
+a
+{
+	text-decoration: none;
+	color: #fff;
+}
+a:hover
+{
+	text-decoration: underline;
+}
