@@ -43,20 +43,11 @@ article {
   align-items: center;
   justify-content: center;
   width: 100%;
-
-  /* background-image: url(../static/images/bg.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; */
   line-height: 1.625;
 }
 
-.content {
-  min-width: 0;
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
+.text {
+  padding: 0 1em;
 }
 
 .welcome {
@@ -67,8 +58,6 @@ article {
 .profil {
   font-size: 1.655rem;
   color: #2d3748;
-
-  /* text-shadow: 0 0 2px #000; */
   margin-top: 1.5rem;
 }
 
