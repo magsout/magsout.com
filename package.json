@@ -1,38 +1,36 @@
 {
-  "name": "boilerplate",
-  "version": "0.5.0",
-  "description": "project boilerplate",
-  "main": "index.html",
+  "name": "magsout",
+  "private": true,
+  "version": "1.0.0",
+  "description": "magsout website",
   "repository": {
     "type": "git",
-    "url": "git://github.com/magsout/boilerplate.git"
+    "url": "https://github.com/magsout/magsout.github.io.git"
   },
   "keywords": [
     "html",
-    "scss",
-    "sass",
-    "css"
+    "css",
+    "profil"
   ],
-  "author": "Splitfire",
-  "license": "BSD-2-Clause",
-  "bugs": {
-    "url": "https://github.com/magsout/boilerplate/issues"
+  "engines": {
+    "node": ">=13"
   },
+  "author": "Guillaume Démésy",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build ./src/pages/index.html",
+    "dev": "parcel ./src/pages/index.html",
+    "fix": "npm run lint:fix:css",
+    "lint": "npm run lint:css",
+    "lint:css": "stylelint './src/**/*.css'",
+    "lint:fix:css": "npm run lint:css -- --fix"
+  },
+  "dependencies": {},
   "devDependencies": {
-    "grunt"							: "*",
-    "grunt-photobox"				: "*",
-    "grunt-bower-task"				: "*",
-    "grunt-contrib-sass"			: "*",
-    "grunt-contrib-compass"			: "*",
-    "grunt-contrib-watch"			: "*",
-    "grunt-contrib-imagemin"		: "*",
-    "grunt-contrib-handlebars"		: "*",
-    "load-grunt-tasks"				: "*",
-    "grunt-autoprefixer" 			: "*",
-    "grunt-contrib-cssmin"			: "*",
-    "grunt-combine-media-queries" 	: "*",
-    "grunt-concurrent"				: "*",
-    "time-grunt"					: "*"	
-
+    "parcel-bundler": "^1.12.4",
+    "postcss": "^7.0.32",
+    "postcss-preset-env": "^6.7.0",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
