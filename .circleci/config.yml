@@ -62,7 +62,7 @@ workflows:
       - client_linter
       - client_deploy:
           requires:
-            - client_minter
+            - client_linter
           filters:
             branches:
               only: master
