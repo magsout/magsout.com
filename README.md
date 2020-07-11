@@ -5,8 +5,8 @@ magsout personal website.
 ## Installation
 
 ```ssh
-git clone git@github.com:magsout/magsout.github.io.git
-cd magsout.github.io
+git clone git@github.com:magsout/magsout.com.git
+cd magsout.com
 npm install
 ```
 
