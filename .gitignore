@@ -1,8 +1,22 @@
-.sass-cache
-.DS_Store
-.bundle
-.sass-cache
-node_modules
-vendors
-Gemfile.lock
-bower
+# Node modules
+node_modules/
+
+# Editor settings
+.vscode/
+.vsls.json
+jsconfig.json
+.idea
+.cache
+
+# Jest coverage output
+coverage/
+
+# Logs
+logs/
+*.logs
+logs
+
+# build
+build/
+dist/
+
