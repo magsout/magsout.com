@@ -4,7 +4,7 @@ magsout personal website.
 
 ## Installation
 
-```ssh
+```console
 git clone git@github.com:magsout/magsout.com.git
 cd magsout.com
 npm install
@@ -12,7 +12,7 @@ npm install
 
 ## Development
 
-```ssh
+```console
 npm run dev
 ```
 
