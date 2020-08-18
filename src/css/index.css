@@ -12,7 +12,7 @@ body {
   font-weight: 400;
   text-size-adjust: none;
   font-family: system-ui;
-  color: #fff;
+  color: #2d3748;
 }
 
 html {
@@ -58,7 +58,6 @@ article {
 
 .profil {
   font-size: 1.655rem;
-  color: #2d3748;
   margin-top: 1.5rem;
 }
 
@@ -72,7 +71,6 @@ article {
 
 .link {
   font-size: 1.5rem;
-  color: #2d3748;
 }
 
 .link + .link {
@@ -81,6 +79,18 @@ article {
 
 .blog {
   font-size: 1.25rem;
-  color: #2d3748;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+}
+
+.time {
+  font-size: .625rem;
+}
+
+.changelog {
+  font-size: .75rem;
+  margin-top: 1rem;
+}
+
+.changelog ul {
+  margin-top: 0;
 }
