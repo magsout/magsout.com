@@ -21,7 +21,10 @@
     "build": "parcel build ./src/pages/*.html",
     "dev": "parcel ./src/pages/*.html",
     "fix": "npm run lint:fix:css",
-    "lint": "npm run lint:css",
+    "lint": "npm run lint:css && npm run lint:html",
+    "lint:fix": "npm run lint:fix:html && npm run int:fix:css",
+    "lint:html": "prettier --check 'src/**/*.html'",
+    "lint:fix:html": "prettier --write 'src/**/*.html'",
     "lint:css": "stylelint './src/**/*.css'",
     "lint:fix:css": "npm run lint:css -- --fix"
   },
@@ -31,6 +34,7 @@
     "postcss": "^7.0.32",
     "postcss-preset-env": "^6.7.0",
     "posthtml-extend": "^0.4.0",
+    "prettier": "^2.0.5",
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0"
   }
