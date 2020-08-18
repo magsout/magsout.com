@@ -47,6 +47,7 @@ article {
 }
 
 .text {
+  max-width: 66.68rem;
   padding: 0 1em;
 }
 
@@ -76,4 +77,10 @@ article {
 
 .link + .link {
   margin-left: 1rem;
+}
+
+.blog {
+  font-size: 1.25rem;
+  color: #2d3748;
+  margin-top: 1.5rem;
 }
