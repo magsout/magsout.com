@@ -1,14 +1,13 @@
 <extends src="app.html">
-  <block name="title">Blog - Guillaume Demesy</block>
-  <block name="description"
-    ><meta name="description" content="Mozilla lays off."
-  /></block>
-  <block name="card">
+  <block name="head">
+    <title>Blog - Guillaume Demesy</title>
+    <meta name="description" content="Blog." />
     <meta name="twitter:url" content="https://magsout.com/blog" />
     <meta property="og:url" content="https://magsout.com/blog" />
     <meta name="twitter:title" content="Blog- Guillaume Demesy" />
     <meta name="twitter:description" content="Blog." />
     <meta property="og:description" content="Blog." />
+    <meta property="og:locale" content="en" />
   </block>
   <block name="content">
     <div class="welcome">Blog</div>
@@ -16,12 +15,12 @@
       <ul>
         <li>
           <a href="/mozilla-layoffs" title="Article about lays off of Mozilla"
-            >[en] Mozilla Lays off</a
+            >Mozilla Lays off [en]</a
           >
         </li>
         <li>
           <a href="/mozilla" title="Article sur les licenciements de Mozilla"
-            >[fr] Mozilla Lays off</a
+            >Mozilla Lays off [fr]</a
           >
         </li>
       </ul>
