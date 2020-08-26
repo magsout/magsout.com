@@ -39,6 +39,8 @@ fi
 # copy over or recompile the new site
 cp -a "../${siteSource}/." ./
 cp -a "../CNAME" ./
+cp -a "../src/pages/sitemap.txt" ./
+
 
 # stage any changes and new files
 git add -A
