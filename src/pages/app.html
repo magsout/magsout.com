@@ -45,33 +45,25 @@
     <link rel="stylesheet" media="all" href="../css/index.css" />
   </head>
   <body ontouchstart="" role="document">
-    <main>
-      <article>
-        <section class="text">
-          <block name="content"></block>
-          <div class="wrapperLink">
-            <a
-              class="link"
-              href="https://twitter.com/magsout"
-              title="Twitter account"
-              >Twitter</a
-            >
-            <a
-              class="link"
-              href="https://github.com/magsout"
-              title="Github account"
-              >Github</a
-            >
-            <a
-              class="link"
-              href="https://linkedin.com/in/guillaumedemesy"
-              title="Linkedin account"
-              >Linkedin</a
-            >
-            <a class="link" href="/blog" title="Blog">Blog</a>
-          </div>
-        </section>
-      </article>
-    </main>
+    <div class="viewport">
+      <header class="header" role="banner">
+        <div class="logo">
+          <a class="linkHomepage" href="/index" title="homepage">@magsout</a>
+        </div>
+        <div class="linkList"><extends src="link-list.html" /></div>
+      </header>
+      <main role="main">
+        <article>
+          <section>
+            <block name="content"></block>
+          </section>
+        </article>
+      </main>
+      <footer role="contentinfo">
+        <div class="wrapperLink">
+          <extends src="link-list.html" />
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
