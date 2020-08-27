@@ -3,6 +3,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 body {
@@ -13,6 +14,7 @@ body {
   text-size-adjust: none;
   font-family: system-ui;
   color: #2d3748;
+  height: 100%;
 }
 
 html {
@@ -32,23 +34,56 @@ a {
   color: inherit;
 }
 
+.viewport {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 66.68rem;
+  height: 100%;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+
+.header,
+.footer {
+  flex: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  margin: 1.5rem 0;
+}
+
+@media all and (max-width: 25em) {
+  .header {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: .75em;
+  }
+}
+
+@media all and (min-width: 25.01em) {
+  .header {
+    justify-content: space-between;
+  }
+}
+
 main {
   display: flex;
-  min-height: 100vh;
-  min-width: 20rem;
+  align-items: center;
+  flex: 1 0 auto;
+}
+
+.linkHomepage {
+  font-size: 1.25em;
 }
 
 article {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
   line-height: 1.625;
-}
-
-.text {
-  max-width: 66.68rem;
-  padding: 0 1em;
 }
 
 .welcome {
@@ -62,7 +97,7 @@ article {
 }
 
 .wrapperLink {
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
   border-top: solid 1px #2d3748;
   padding-top: 1rem;
   display: flex;
@@ -70,7 +105,7 @@ article {
 }
 
 .link {
-  font-size: 1.5rem;
+  font-size: inherit;
 }
 
 .link + .link {
