@@ -1,18 +1,23 @@
-name: Client test
+name: client
 
 on: [pull_request]
 
 jobs:
   release:
-    name: client-test
-
-  build:
+    name: client-linter
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
-      with:
-        node-version: "12.x"
-    - run: npm install
-    - run: npm test
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.13
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: v1-npm-deps-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: v1-npm-deps-
+      - name: Install dependencies
+        run: npm install
+      - name: lint
+        run: npm run lint
