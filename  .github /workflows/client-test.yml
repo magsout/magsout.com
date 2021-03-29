@@ -1,4 +1,4 @@
-name: client test
+name: client-test
 
 on: [pull_request]
 
@@ -19,5 +19,3 @@ jobs:
           restore-keys: v1-npm-deps-
       - name: Install dependencies
         run: npm install
-      - name: lint
-        run: npm run lint
