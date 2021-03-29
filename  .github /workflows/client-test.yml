@@ -1,10 +1,10 @@
-name: client-test
+name: Client test
 
 on: [pull_request]
 
 jobs:
   release:
-    name: client-linter
+    name: client-test
   build:
 
     runs-on: ubuntu-latest
