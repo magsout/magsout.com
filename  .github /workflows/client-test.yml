@@ -1,4 +1,4 @@
-name: Linter
+name: client test
 
 on: [pull_request]
 
