@@ -1,0 +1,46 @@
+name: Client
+
+on:
+  pull_request:
+
+  workflow_dispatch:
+
+jobs:
+  lint:
+    name: client-linter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.13
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: v1-npm-deps-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: v1-npm-deps-
+      - name: Install dependencies
+        run: npm ci
+      - name: lint
+        run: npm run lint
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    name: client-deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.13
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: v1-npm-deps-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: v1-npm-deps-
+      - name: Install dependencies
+        run: npm ci
+      - run: chmod +x ./scripts/deploy.sh
+      - name: build
+        run: ./scripts/deploy.sh dist

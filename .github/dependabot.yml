@@ -1,8 +1,13 @@
 version: 2
 updates:
 - package-ecosystem: npm
-  directory: "/"
+  directory: "./"
   schedule:
     interval: monthly
-    time: "10:00"
+    time: "04:00"
   open-pull-requests-limit: 10
+  target-branch: master
+  reviewers:
+  - magsout
+  labels:
+  - "type : dependencies"
