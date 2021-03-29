@@ -17,5 +17,7 @@ jobs:
           path: ~/.npm
           key: v1-npm-deps-${{ hashFiles('**/package-lock.json') }}
           restore-keys: v1-npm-deps-
+      - name: Install dependencie
+        run: npm install
       - name: lint
         run: npm run lint
