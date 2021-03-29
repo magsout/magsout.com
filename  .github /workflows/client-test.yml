@@ -5,7 +5,10 @@ on: [pull_request]
 jobs:
   release:
     name: client-linter
+  build:
+
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -17,5 +20,4 @@ jobs:
           path: ~/.npm
           key: v1-npm-deps-${{ hashFiles('**/package-lock.json') }}
           restore-keys: v1-npm-deps-
-      - name: Install dependencies
-        run: npm install
+      - run: npm install
