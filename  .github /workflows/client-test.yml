@@ -1,0 +1,18 @@
+name: Client test
+
+on: [pull_request]
+
+jobs:
+  release:
+    name: client-test
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: "12.3"
+    - run: npm install
+    - run: npm test

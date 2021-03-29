@@ -21,6 +21,7 @@
     "build": "parcel build ./src/pages/**/*.html",
     "dev": "parcel ./src/pages/**/*.html",
     "fix": "npm run lint:fix:css && npm run lint:fix:html",
+    "test": "npm run lint",
     "lint": "npm run lint:css && npm run lint:html",
     "lint:fix": "npm run lint:fix:html && npm run lint:fix:css",
     "lint:html": "prettier --check 'src/**/*.html'",
