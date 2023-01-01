@@ -36,7 +36,7 @@
     "postcss-preset-env": "^6.7.0",
     "posthtml-extend": "^0.6.3",
     "prettier": "^2.5.1",
-    "stylelint": "^13.13.1",
+    "stylelint": "^14.16.1",
     "stylelint-config-standard": "^20.0.0"
   }
 }
